@@ -18,10 +18,10 @@ A splash website for a fictional BBQ webinar with a form to register. The site i
 
 ## Screenshots
 
-![Screenshot]()
-![Screenshot_1]()
+![Screenshot](https://user-images.githubusercontent.com/57517804/115219523-338d3780-a13a-11eb-8301-0c47874dcb26.png)
+![Screenshot_1](https://user-images.githubusercontent.com/57517804/115219091-c1b4ee00-a139-11eb-86dc-c9ee7472165f.png)
 
-[Demo]()
+[Demo](https://wizardly-lamport-e5cbc6.netlify.app/)
 
 ## Built With
 
