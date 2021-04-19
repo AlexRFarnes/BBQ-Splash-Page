@@ -113,7 +113,6 @@ p {
     left: 50%;
     transform: translateX(-50%);
   }
-
   .subtitle,
   h2 {
     font-size: 1.75rem;
@@ -121,6 +120,9 @@ p {
   .subtitle {
     margin-top: -3.5em;
     line-height: 1;
+  }
+  .disclaimer{
+    width: 60%;
   }
 }
 
