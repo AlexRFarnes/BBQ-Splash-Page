@@ -19,7 +19,7 @@ body {
   font-size: 1rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   body {
     font-size: 1.125rem;
   }
@@ -30,7 +30,7 @@ body {
   color: #f18119;
   letter-spacing: 2px;
   width: 75%;
-  margin: 0 auto 8em;
+  margin: 0 auto;
   padding-top: 1em;
   font-size: 0.625rem;
   text-transform: uppercase;
@@ -38,7 +38,6 @@ body {
 }
 
 h1 {
-  margin-bottom: 2.5em;
   font-size: 2.25rem;
   font-weight: 300;
   line-height: 1;
@@ -85,16 +84,10 @@ strong {
   letter-spacing: 1px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   h1 {
     font-size: 3.5rem;
-  }
-
-  .small {
-    position: absolute;
-    top: 1em;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-bottom: 0.5em;
   }
 
   .subtitle,
@@ -103,7 +96,6 @@ strong {
   }
 
   .subtitle {
-    margin-top: -3.5em;
     line-height: 1;
   }
 
@@ -121,6 +113,10 @@ strong {
   background-position: center;
   padding: 0 1.5em 2.5em;
   color: #fff;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .gradient-border {
@@ -134,11 +130,10 @@ strong {
   padding: 2.5em 1.5em;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .container {
     display: flex;
-    max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
   }
 
   .intro {
@@ -158,12 +153,20 @@ strong {
     min-height: 100vh;
   }
 
-  .gradient-border {
+  .top-intro {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
   }
+}
+
+/* Solution #1 for larger screens to not set a max-width on the container*/
+.intro > *,
+.main-content > * {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Form */
@@ -204,4 +207,15 @@ input:focus {
 .btn-cta:hover,
 .btn-cta:focus {
   background: #b9532b;
+}
+
+@media (min-width: 650px) {
+  form {
+    width: 100%;
+  }
+
+  input,
+  .btn-cta {
+    width: 85%;
+  }
 }
