@@ -29,12 +29,13 @@ body {
 .small {
   color: #f18119;
   letter-spacing: 2px;
-  width: 75%;
   margin: 0 auto;
-  padding-top: 1em;
+  padding-top: 0.25em;
   font-size: 0.625rem;
   text-transform: uppercase;
   font-weight: 900;
+  border-top: 5px solid #f18119;
+  border-image: linear-gradient(to left, #ff895d, #df4e13, #ffa51d) 1;
 }
 
 h1 {
@@ -77,9 +78,9 @@ strong {
 }
 
 .disclaimer {
-  font-size: 0.625em;
+  font-size: 0.625rem;
   color: #989898;
-  width: 40%;
+  width: 60%;
   margin: 0 auto;
   letter-spacing: 1px;
 }
@@ -98,16 +99,15 @@ strong {
   .subtitle {
     line-height: 1;
   }
-
-  .disclaimer {
-    width: 60%;
-  }
 }
 
 /* Layout */
 .intro {
   background: url(./images/dark-ribs.jpg);
+  /* background-image: url(images/ribs.jpg), linear-gradient(45deg,red, blue); */
   background-color: #404040;
+  /* For background-blend-mode to work a background-image and background-color or a background-image and a gradient are needed */
+  /* background-blend-mode: multiply; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -117,13 +117,6 @@ strong {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.gradient-border {
-  width: 190px;
-  margin: 0 auto 0.1em;
-  height: 7px;
-  background: linear-gradient(270deg, #ff895d, #df4e13, #ffa51d);
 }
 
 .main-content {
@@ -153,7 +146,7 @@ strong {
     min-height: 100vh;
   }
 
-  .top-intro {
+  .small {
     position: absolute;
     top: 0;
     left: 50%;
@@ -179,11 +172,12 @@ input {
   display: block;
   width: 100%;
   margin: 0 auto 1em;
-  padding: 0.75em 1em;
-  text-align: center;
-  border-radius: 7px;
+  padding: 0.25em 1em;
+  text-align: inherit;
+  border-radius: 5px;
   border: 1px solid #818181;
   font-size: 1rem;
+  font-family: inherit;
 }
 
 input:focus {
@@ -193,13 +187,14 @@ input:focus {
 .btn {
   cursor: pointer;
   border: none;
-  font-size: 0.625em;
+  font-size: 0.625rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 1.5em;
+  padding: 0.75em;
   text-transform: uppercase;
-  border-radius: 7px;
+  border-radius: 5px;
   font-weight: 900;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  display: inline-block;
 }
 
 .btn-cta {
@@ -207,10 +202,10 @@ input:focus {
   width: 100%;
   background: linear-gradient(270deg, #ff713b, #ffa51d);
   color: #fff;
+  transition: color 0.3s ease;
 }
 
 .btn-cta:hover,
 .btn-cta:focus {
-  background: #b9532b;
+  color: #000;
 }
-
