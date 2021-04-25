@@ -84,7 +84,7 @@ strong {
   letter-spacing: 1px;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 625px) {
   h1 {
     font-size: 3.5rem;
     margin-bottom: 0.5em;
@@ -130,7 +130,7 @@ strong {
   padding: 2.5em 1.5em;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 625px) {
   .container {
     display: flex;
     margin: 0 auto;
@@ -161,18 +161,23 @@ strong {
   }
 }
 
-/* Solution #1 for larger screens to not set a max-width on the container*/
+/* Solution for larger screens to not set a max-width on the container */
 .intro > *,
 .main-content > * {
-  max-width: 500px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* Form */
+.email-collector {
+  width: 80%;
+  max-width: 300px;
+}
+
 input {
   display: block;
-  width: 75%;
+  width: 100%;
   margin: 0 auto 1em;
   padding: 0.75em 1em;
   text-align: center;
@@ -199,7 +204,7 @@ input:focus {
 
 .btn-cta {
   margin: 0 auto 1em;
-  width: 75%;
+  width: 100%;
   background: linear-gradient(270deg, #ff713b, #ffa51d);
   color: #fff;
 }
@@ -209,13 +214,3 @@ input:focus {
   background: #b9532b;
 }
 
-@media (min-width: 650px) {
-  form {
-    width: 100%;
-  }
-
-  input,
-  .btn-cta {
-    width: 85%;
-  }
-}
